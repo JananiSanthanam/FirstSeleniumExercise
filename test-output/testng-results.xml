@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21" started-at="2014-02-14T09:11:28Z" finished-at="2014-02-14T09:11:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21" started-at="2014-02-14T09:11:28Z" finished-at="2014-02-14T09:11:28Z">
+      <class name="FirstSeleniumExercise.msntestcases">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:FirstSeleniumExercise.msntestcases@c1d5a3]" name="beforeSuite" is-config="true" duration-ms="11" started-at="2014-02-14T01:11:28Z" finished-at="2014-02-14T01:11:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:FirstSeleniumExercise.msntestcases@c1d5a3]" name="testcase1" duration-ms="8" started-at="2014-02-14T01:11:28Z" finished-at="2014-02-14T01:11:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:FirstSeleniumExercise.msntestcases@c1d5a3]" name="afterSuite" is-config="true" duration-ms="0" started-at="2014-02-14T01:11:28Z" finished-at="2014-02-14T01:11:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- FirstSeleniumExercise.msntestcases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
