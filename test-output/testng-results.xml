@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21" started-at="2014-02-14T09:11:28Z" finished-at="2014-02-14T09:11:28Z">
+  <suite name="Default suite" duration-ms="30161" started-at="2014-02-16T11:09:30Z" finished-at="2014-02-16T11:10:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21" started-at="2014-02-14T09:11:28Z" finished-at="2014-02-14T09:11:28Z">
+    <test name="Default test" duration-ms="30161" started-at="2014-02-16T11:09:30Z" finished-at="2014-02-16T11:10:00Z">
       <class name="FirstSeleniumExercise.msntestcases">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:FirstSeleniumExercise.msntestcases@c1d5a3]" name="beforeSuite" is-config="true" duration-ms="11" started-at="2014-02-14T01:11:28Z" finished-at="2014-02-14T01:11:28Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:FirstSeleniumExercise.msntestcases@18fab9c1]" name="beforeSuite" is-config="true" duration-ms="5705" started-at="2014-02-16T03:09:24Z" finished-at="2014-02-16T03:09:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="testcase1()[pri:0, instance:FirstSeleniumExercise.msntestcases@c1d5a3]" name="testcase1" duration-ms="8" started-at="2014-02-14T01:11:28Z" finished-at="2014-02-14T01:11:28Z">
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:FirstSeleniumExercise.msntestcases@18fab9c1]" name="testcase1" duration-ms="3840" started-at="2014-02-16T03:09:30Z" description="Click on News" finished-at="2014-02-16T03:09:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase1 -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:FirstSeleniumExercise.msntestcases@c1d5a3]" name="afterSuite" is-config="true" duration-ms="0" started-at="2014-02-14T01:11:28Z" finished-at="2014-02-14T01:11:28Z">
+        <test-method status="PASS" signature="testcase2()[pri:0, instance:FirstSeleniumExercise.msntestcases@18fab9c1]" name="testcase2" duration-ms="1090" started-at="2014-02-16T03:09:33Z" description="Scrolldown the Page" finished-at="2014-02-16T03:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="testcase3()[pri:0, instance:FirstSeleniumExercise.msntestcases@18fab9c1]" name="testcase3" duration-ms="1084" started-at="2014-02-16T03:09:35Z" description="Scrollup the Page" finished-at="2014-02-16T03:09:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method status="PASS" signature="testcase4()[pri:0, instance:FirstSeleniumExercise.msntestcases@18fab9c1]" name="testcase4" duration-ms="965" started-at="2014-02-16T03:09:36Z" description="Search an item on News" finished-at="2014-02-16T03:09:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+        <test-method status="PASS" signature="testcase5()[pri:0, instance:FirstSeleniumExercise.msntestcases@18fab9c1]" name="testcase5" duration-ms="12013" started-at="2014-02-16T03:09:37Z" description="Click on Saved Locations to change it and handle the popup" finished-at="2014-02-16T03:09:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+        <test-method status="PASS" signature="testcase6()[pri:0, instance:FirstSeleniumExercise.msntestcases@18fab9c1]" name="testcase6" duration-ms="11136" started-at="2014-02-16T03:09:49Z" description="Click on a Drop down List and Select a Value" finished-at="2014-02-16T03:10:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase6 -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:FirstSeleniumExercise.msntestcases@18fab9c1]" name="afterSuite" is-config="true" duration-ms="0" started-at="2014-02-16T03:10:00Z" finished-at="2014-02-16T03:10:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
