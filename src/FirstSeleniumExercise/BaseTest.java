@@ -55,5 +55,16 @@ public class BaseTest {
 	  for (int i =0;i<=n;i++){
 		  driver.navigate().back();
 	  }
+	  
   }
-  }
+  public static void handlewindows(WebDriver driver){
+  for (String winhandle: driver.getWindowHandles()){
+		 driver.switchTo().window(winhandle);
+		 driver.manage().window().maximize();
+		 System.out.println("Title of the new window:: " + driver.getTitle());
+		
+	}
+ 
+}
+	  }
+ 

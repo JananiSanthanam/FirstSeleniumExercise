@@ -104,14 +104,19 @@ public class msntestcases extends BaseTest{
       	actions.moveToElement(menuhover).perform();
       	Thread.sleep(1000);
       	WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Edit List')]"));
-      	actions.moveToElement(submenu).click().perform();
-      	for (String winhandle: driver.getWindowHandles()){
-      		 driver.switchTo().window(winhandle);
-      		 driver.manage().window().maximize();
-      		 System.out.println("Title of the new window:: " + driver.getTitle());
+      	if(submenu.isDisplayed())
+      	{
+      	 System.out.println("Click on the Element");
       	}
-      		driver.close();
-            driver.switchTo().window(windowbefore);
+      	else{
+      		
+          	actions.moveToElement(menuhover).perform();
+          	Thread.sleep(1000);
+      	   }
+      	actions.moveToElement(submenu).click().perform();
+      	handlewindows(driver);
+      	driver.close();
+      	driver.switchTo().window(windowbefore);
     }
     catch(Exception e){
     	ScreenShot(driver.getTitle(), driver);
@@ -131,6 +136,7 @@ public class msntestcases extends BaseTest{
       	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     	dropdown.selectByValue("Lexus");
     	driver.findElement(By.cssSelector("#autofrm>div:nth-child(3)>input")).click();
+    	Assert.assertEquals(driver.getTitle(),"Lexus - Research All Models and Prices - MSN Autos");
           }
     	
      catch(Exception e){
@@ -138,7 +144,50 @@ public class msntestcases extends BaseTest{
 				 Assert.fail("No Selection made from the drop down list");
 			 }
     }
-    		
+    
+    
+    @Test(description = "Click on an iframe object")
+    public void testcase7() throws InterruptedException, IOException{
+    	try{
+    	goback(1,driver);
+    	((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+       	String windowbefore = driver.getWindowHandle();
+    	driver.switchTo().frame("dapIfM1");
+    	driver.findElement(By.cssSelector("#dapIfM1>a>img")).click();
+    	goback(1,driver);
+    	handlewindows(driver);
+    	driver.close();
+    	driver.switchTo().window(windowbefore);
+    	}
+    	
+     catch(Exception e){
+				 ScreenShot("testcase7", driver);
+				 Assert.fail("Clicking on the iframe element failed");
+			 }
+    }
+    @Test(description = "Click on an Video Control to play")
+    public void testcase8() throws InterruptedException, IOException{
+    	try{
+    	    	
+    	driver.findElement(By.cssSelector("a.gt1-42010>img")).click();
+    	((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+    	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+    	Actions actions = new Actions(driver);
+    	WebElement play = driver.findElement(By.cssSelector("div.vxp_richEmbedContainer vxp_tb10>object"));
+    	//actions.moveToElement(play).moveByOffset(50,400);
+       actions.moveToElement(play).moveByOffset(20,400).click().perform();
+       driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+       actions.moveToElement(play).moveByOffset(20,400).click().perform();
+       goback(1,driver);
+    	
+    	}
+    	
+     catch(Exception e){
+				 ScreenShot("testcase8", driver);
+				 Assert.fail("failed to play a video");
+			 }
+    }
+     		
     	
     
   @AfterSuite
