@@ -33,7 +33,7 @@ public class BaseTest {
   public static void ScreenShot(String methodname,WebDriver driver ) throws IOException {
 	  DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
 	  Date date = new Date();
-	  //System.out.println(dateFormat.format(date));
+	  System.out.println(dateFormat.format(date));
 	  File screenshotfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	  FileUtils.copyFile(screenshotfile,new File("C:\\Users\\VNeelakandan\\workspace\\FirstSeleniumExercise\\ScreenShotImages\\" + methodname + dateFormat.format(date) + ".png")); 
 	 
