@@ -37,7 +37,7 @@ public class msntestcases extends BaseTest{
 		 
 		 }
 	 
-	 @Test(description="Click on News")
+	 @Test(description="Click on News Tab in MSN Homepage")
 	  public void testcase1() throws NoSuchElementException, IOException {
 		 try{
 		 if(driver.getTitle().equals("MSN.com"))
